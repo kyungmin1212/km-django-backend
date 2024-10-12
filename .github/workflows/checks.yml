@@ -15,8 +15,8 @@ jobs: # 실행 workflow management
       - name: Checkout
         uses: actions/checkout@v2 # 우리 대신 코드 세팅을 해주는 것입니다.
       - name: Test
-        run: docker-compose run --rm app sh -c "python manage.py test"
+        run: docker compose run --rm app sh -c "python manage.py test"
       - name: Lint(Flake8)
-        run: docker-compose run --rm app sh -c "flake8"
+        run: docker compose run --rm app sh -c "flake8"
 
 # github actions -> 설치 필요 없고 무료입니다!! 
