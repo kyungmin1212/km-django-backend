@@ -1,6 +1,6 @@
 name: Checks
 
-on:[push] # 트리거 언제 트리거할지 push 할때 트리거하기
+on: [push] # 트리거 언제 트리거할지 push 할때 트리거하기
 
 jobs: # 실행 workflow management
   test-lint: # 테스트 코드 돌리고 lint 체크
